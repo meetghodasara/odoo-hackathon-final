@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Book from "./Book";
 import "./BookList.css";
 
-const BookList = ({ title }) => {
+const BookList = ({ title, data }) => {
   const books = [
     {
       id: 1,
