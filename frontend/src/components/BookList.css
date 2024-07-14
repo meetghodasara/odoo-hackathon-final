@@ -1,0 +1,13 @@
+.book-title{
+    text-align: left;
+}
+
+.books{
+    left: 0;
+    padding: auto;
+}
+
+.book-item{
+    border: 0px 0px 2px 0px solid black;
+    padding: 20px 2px;
+}
