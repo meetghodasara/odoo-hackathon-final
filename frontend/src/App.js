@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import UserProfile from './pages/UserProfile';
+import UserHomePage from './pages/UserHomePage';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/users/:userId" element={<UserProfile />} />
+          <Route path="/userHomePage" element={<UserHomePage />} />
         </Routes>
       </Router>
     </div>
