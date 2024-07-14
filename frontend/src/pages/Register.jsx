@@ -6,6 +6,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 import "./form.css";
 
 const Register = () => {
@@ -143,6 +144,11 @@ const Register = () => {
             <Button variant="contained" type="submit">
               Register
             </Button>
+            <div className="new-user">
+              <p>
+                Have an account? <Link to="/login">Sign In</Link>
+              </p>
+            </div>
           </div>
         </form>
       </div>
@@ -151,8 +157,6 @@ const Register = () => {
       </div>
     </div>
   );
-
-  //   return (
   //     <div>
   //       <div className="login-main">
   //         <div className="login-container">

@@ -1,6 +1,7 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 import "./form.css";
 
 const Login = () => {
@@ -76,7 +77,7 @@ const Login = () => {
               </div>
               <div className="new-user">
                 <p>
-                  Don't have an account? <a href="#">Sign Up</a>
+                  Don't have an account? <Link to="/register">Sign Up</Link>
                 </p>
               </div>
             </div>
