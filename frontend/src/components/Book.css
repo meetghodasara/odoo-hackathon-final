@@ -1,0 +1,58 @@
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    position: relative;
+}
+
+.book .book-left{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.book .book-left .book-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book .book-right{
+    height: 99%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-align: left;
+    background-color: rgb(238, 236, 236);
+    color: black;
+    font-weight: 400;
+    border-radius: 0 15px 15px 0;
+}
+
+.icon-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    background-color: white;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+
+.borrow-icon{
+    width: 35px;
+}
+
+.book:hover .icon-container{
+    display: flex;
+}
